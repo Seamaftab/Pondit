@@ -44,6 +44,7 @@
 
         echo '<pre>';
         print_r($cars);
+        echo "<br>"
     ?>
 </body>
 </html>
