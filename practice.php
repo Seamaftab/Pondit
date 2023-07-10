@@ -44,7 +44,10 @@
 
         echo '<pre>';
         print_r($cars);
-        echo "<br>"
+
+        foreach ($cars as $key => $value) {
+            echo $key." = ".$value."<br>";
+        }
     ?>
 </body>
 </html>
