@@ -1,0 +1,31 @@
+//Echo vs Print
+
+1. In Echo, we can pass multiple arguments separated by commas.	In Print, we cannot pass multiple arguments.
+2. In Echo, we can exhibit the outputs of one or more strings separated by commas.	Through the Print statement, we can only show the strings.
+3. Echo can be used with or without parentheses	Print can also be used with or without parentheses.
+4. It never returns any value.	It always returns the integer value that is 1.
+5. This statement is fast as compared to the print statement.	It is slow as compared to the echo statement.
+
+//Single vs Double Quote
+
+What is the difference between single-quoted and double-quoted strings in PHP?
+
+In PHP, single-quoted strings and double-quoted strings are very similar, with a few key differences.
+
+The biggest difference between single-quoted and double-quoted strings is that single-quoted strings are slightly faster and use slightly less memory. This is because single-quoted strings don't support string interpolation, which means that you cannot use variables or special characters inside a single-quoted string and have them interpreted as their corresponding values. Instead, the variables and special characters are treated as plain text.
+
+On the other hand, double-quoted strings do support string interpolation, which means that you can use variables and special characters inside the string and they will be interpreted as their corresponding values. However, this means that double-quoted strings are slightly slower and use slightly more memory than single-quoted strings.
+
+//Heredoc v Nowdoc
+
+Heredoc
+A third way to delimit strings is the heredoc syntax: <<<. After this operator, an identifier is provided, then a newline. The string itself follows, and then the same identifier again to close the quotation.
+
+The closing identifier may be indented by space or tab, in which case the indentation will be stripped from all lines in the doc string. Prior to PHP 7.3.0, the closing identifier must begin in the first column of the line.
+
+Also, the closing identifier must follow the same naming rules as any other label in PHP: it must contain only alphanumeric characters and underscores, and must start with a non-digit character or underscore.
+
+Nowdoc
+Nowdocs are to single-quoted strings what heredocs are to double-quoted strings. A nowdoc is specified similarly to a heredoc, but no parsing is done inside a nowdoc. The construct is ideal for embedding PHP code or other large blocks of text without the need for escaping. It shares some features in common with the SGML <![CDATA[ ]]> construct, in that it declares a block of text which is not for parsing.
+
+A nowdoc is identified with the same <<< sequence used for heredocs, but the identifier which follows is enclosed in single quotes, e.g. <<<'EOT'. All the rules for heredoc identifiers also apply to nowdoc identifiers, especially those regarding the appearance of the closing identifier.
