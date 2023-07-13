@@ -39,6 +39,25 @@
 		// 	$j++;
 		// }
 
+		echo "<br>fibonacci series : ";
+		$t1 = 0; $t2 = 1; $nextTerm = 0;
+
+		for ($j = 1; $j <= 10; ++$j) {
+	        if($j == 1) {
+	            echo $t1.",";
+	            continue;
+	        }
+	        if($j == 2) {
+	            echo $t2.",";
+	            continue;
+	        }
+	        $nextTerm = $t1 + $t2;
+	        $t1 = $t2;
+	        $t2 = $nextTerm;
+	        
+	        echo $nextTerm.",";
+	    }
+
 		//Function
 
 		function add($a,$b)
@@ -74,7 +93,7 @@
 		$number_1 = 22;
 		$number_2 = 7;
 
-		echo "<br>Operations for $number_1 and $number_2 are : <br><br>";
+		echo "<br><br>Operations for $number_1 and $number_2 are : <br><br>";
 
 		echo "Addition : ".add($number_1,$number_2)."<br>";
 		echo "Subtraction : ".sub($number_1,$number_2)."<br>";
