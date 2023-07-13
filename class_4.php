@@ -21,6 +21,24 @@
 			}
 		}
 
+		// //fibonacci
+
+		// function fibonacci($f)
+		// {
+		// 	if (($f==0) || ($f==1)) {
+		// 		return $f;
+		// 	} else {
+		// 		return (fibonacci($f-1)+fibonacci($f-2));
+		// 	}
+		// }
+		// $limit = 50;
+		// echo "fibonacci series : ";
+		// while($j < $limit)
+		// {
+		// 	echo fibonacci($j);
+		// 	$j++;
+		// }
+
 		//Function
 
 		function add($a,$b)
